@@ -1,15 +1,41 @@
-<!DOCTYPE html>
-<html>
-
+<!-- Body -->
 <body class="body">
 	<body>
 		<div class="box">
-			<h1>Colorado 2015</h1>
+			<h1>Colorado</h1>
 			<br />
 			<br />	
 			<p>
 				In June of 2015, I took a road trip up to Colorado. It was the first time I ever been to the state. My girlfriend and her younger sister joined me. It was an amazing trip. Colorado is beautiful. I can't wait to go back.
 			</p>
+			<!-- Image Carousel -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <%= image_tag '1.jpg', :class => 'img-responsive' %>
+			      <!--div class="carousel-caption">The Bearded Lady</div-->
+			    </div>
+			    <div class="item">
+			      <%= image_tag '2.jpg', :class => 'img-responsive' %>
+			      <!--div class="carousel-caption">Mmm...fish tacos from the Flying Fish!</div-->
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div>
 			<p>
 				Here are some photos from my trip.
 			</p>
@@ -26,4 +52,4 @@
 		</div>
 	</body>
 </body>
-</html>
+
