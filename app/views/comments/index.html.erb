@@ -41,6 +41,13 @@
 			</p>
 			<br />
 			<h2><%= @comment.message %></h2>
+			<div class="box2"><h1>Add a comment</h1>
+				<%= simple_form_for @comment do |f| %>
+					<%= f.input :message %>
+					<br />
+					<%= f.submit 'Create', :class => 'btn btn-danger' %>
+				<% end %>
+			</div>	
 		</div>
 	</body>
 </body>
