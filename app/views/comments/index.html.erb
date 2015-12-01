@@ -40,9 +40,12 @@
 				Here are some photos from my trip.
 			</p>
 			<br />
-			<h2><%= @comment.message %></h2>
+			<h2><% @comments.each do |comment| %>
+   				<div><%= comment.message%></div>
+				<% end %>
+			</h2>
 			<div class="box2"><h1>Add a comment</h1>
-				<%= simple_form_for @comment do |f| %>
+				<%= simple_form_for Comment.new do |f| %>
 					<%= f.input :message %>
 					<br />
 					<%= f.submit 'Create', :class => 'btn btn-danger' %>
