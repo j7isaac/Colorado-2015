@@ -6,37 +6,39 @@ body {
 	background-size: cover;	
 }
 
+.carousel {
+	margin-top: 1em;
+}
+
 h1 {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
-	font-size: 60px;
-	margin: 0px;
+	font-size: 16vw;
 }
 
 h2 {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
-	font-size: 20px;
+	font-size: 2em;
 	margin: 0px;
 	text-align: left;
 }
 
 p {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
 	text-align: left;
-	font-size: 30px;
+	font-size: large;
+	margin-bottom: 0;
 }
 
 .box {
-	background-color: rgba(0,0,0,0.8); 
-	padding: 20px;
-	margin: 25px 20px;
+	font-family: 'Helvetica Neue', Helvetica;
+	color: white;
+	background-color: rgba(63,94,132,0.9);
+	box-shadow: 0px 3px 8px #2a2a2a; 
+	padding: 2em;
 	text-align: center;
-	resize: both;
+	margin-top: 3em;
+	margin-bottom: 50px;
+	color: #D8E6F3;
 }
 
 .box2 {

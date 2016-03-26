@@ -1,5 +1,5 @@
 Quiz1::Application.routes.draw do
-  root 'comments#index'
+  root 'pages#index'
 
   resources :comments
   # The priority is based upon order of creation: first created -> highest priority.
